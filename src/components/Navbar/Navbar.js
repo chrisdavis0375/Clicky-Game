@@ -5,11 +5,11 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
-        <ul>
-          <li className="itemLeft">Test Your Memory</li>
-          <li className="itemCenter" />
-          <li className="itemRight">Score: {this.props.score}</li>
-        </ul>
+        <h4 className="col-md-4">Clicky Game</h4>
+        <h4 className="col-md-4">Click an image to begin!</h4>
+        <h4 className="col-md-4">
+          Total Score: {this.props.score} || High Score: {this.props.highScore}
+        </h4>
       </nav>
     );
   }
