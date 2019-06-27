@@ -2,11 +2,21 @@
   text-align: center;
 }
 
-.row {
+/* .row {
   display: flex;
   align-items: center;
+} */
+.container {
+  padding-top: 50px;
+  background: #eceff1;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

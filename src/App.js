@@ -20,18 +20,9 @@ class App extends React.Component {
           <Navbar score={this.state.score} highScore={this.state.highScore} />
           <Jumbotron />
           <div className="container">
-            <div className="row">
-              <CharacterCards image={characters[0].image} />
-              <CharacterCards image={characters[1].image} />
-              <CharacterCards image={characters[2].image} />
-              <CharacterCards image={characters[3].image} />
-            </div>
-            <CharacterCards image={characters[4].image} />
-            <CharacterCards image={characters[5].image} />
-            <CharacterCards image={characters[6].image} />
-            <CharacterCards image={characters[7].image} />
-            <CharacterCards image={characters[8].image} />
-            <CharacterCards image={characters[9].image} />
+            {this.state.characters.map(card => (
+              <CharacterCards image={card.image} />
+            ))}
           </div>
           <Footer />
         </div>
