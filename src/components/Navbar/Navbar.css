@@ -1,0 +1,20 @@
+h4 {
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #513384;
+  color: white;
+  height: 100px;
+  font-family: "DM Serif Display", serif;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 4;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+}

@@ -5,7 +5,11 @@ class Jumbotron extends React.Component {
   render() {
     return (
       <div class="jumbotron">
-        <h1>Test</h1>
+        <h1 className="jumbotron-text">Clicky Game!</h1>
+        <h4 className="jumbotron-text">
+          Get points by clicking one of the images below, but don't click on the
+          same image twice!
+        </h4>
       </div>
     );
   }

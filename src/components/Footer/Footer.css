@@ -1,0 +1,10 @@
+.footer {
+  background: #513384;
+  height: 50px;
+  color: white;
+}
+
+.footer-text {
+  position: relative;
+  top: 10px;
+}

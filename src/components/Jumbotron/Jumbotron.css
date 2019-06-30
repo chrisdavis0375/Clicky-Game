@@ -1,0 +1,14 @@
+.jumbotron {
+  background: url("../../images/jumbotron-background.jpg");
+  height: 400px;
+  text-align: center;
+  color: white;
+  margin-top: 75px;
+  clear: left;
+  z-index: 4;
+}
+
+.jumbotron-text {
+  position: relative;
+  top: 70px;
+}
