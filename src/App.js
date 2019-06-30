@@ -29,9 +29,15 @@ class App extends React.Component {
     return true;
   };
 
+  winGame = () => {
+    this.setState({
+      header: "YOU WON! Click another image to start a new game!"
+    });
+  };
+
   Counter = id => {
-    this.state.characters.find((o, i) => {
-      if (o.id === id) {
+    this.state.characters.find((object, i) => {
+      if (object.id === id) {
         if (characters[i].count === 0) {
           this.setState({ header: "Click an image to begin!" });
 
@@ -39,8 +45,12 @@ class App extends React.Component {
           this.setState({ score: this.state.score + 1 }, function() {
             console.log(this.state.score);
           });
+
           this.state.characters.sort(() => Math.random() - 0.5);
           return true;
+        }
+        if (this.state.score === 12) {
+          this.winGame();
         } else {
           this.endGame();
         }
